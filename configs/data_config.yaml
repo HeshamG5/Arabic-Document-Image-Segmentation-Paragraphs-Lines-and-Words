@@ -1,0 +1,27 @@
+experiment:
+  path: experiments
+  name: exp_001
+
+data:
+  processed_dir: data/processed      # المسار إلى مجلد processed
+  image_height: 512
+  image_width: 512
+
+model:
+  in_channels: 3
+  out_channels: 1
+  features: [64, 128, 256, 512]
+
+training:
+  batch_size: 8
+  epochs: 10
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss: "dice_loss"
+  save_frequency: 5
+  validation_frequency: 1
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
+  seed: 42
+  device: "cuda"
+  num_workers: 2    # أضف هذا السطر إذا أردت

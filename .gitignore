@@ -1,0 +1,7 @@
+﻿results/
+experiments/
+*.pth
+*.pt
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,4 @@
+model:
+  n_channels: 3
+  n_classes: 2
+  bilinear: true
